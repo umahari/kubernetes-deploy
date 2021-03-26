@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - main
+     - release**
 env:
   PROJECT_ID: ${{ secrets.RUN_PROJECT }}
   RUN_REGION: us-central1
@@ -31,6 +32,7 @@ jobs:
       with:
         version: '290.0.1'
         service_account_key: ${{ secrets.RUN_SA_KEY }}
+        export_default_credentials: true
         project_id: ${{ secrets.RUN_PROJECT }}
 
     # Build and push image to Google Container Registry  
