@@ -3,7 +3,6 @@ on:
   push:
     branches:
     - main
-     - release**
 env:
   PROJECT_ID: ${{ secrets.RUN_PROJECT }}
   RUN_REGION: us-central1
