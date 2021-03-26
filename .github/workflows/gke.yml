@@ -48,7 +48,7 @@ jobs:
     - name: Terraform repository checkout 
       uses: actions/checkout@v2
       with:
-        repository: umahari/tf-store/kubernetes.tf
+        repository: umahari/tf-store
         path: gke-tf-scripts        
         ssh-strict: false
         #ssh-key: ${{ secrets.MGMT_SSH }}
